@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Build output
+.next/
+out/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS / Editor files
+.DS_Store
+.idea/
+.vscode/
+
+# Environment files
+.env
+.env.*
+
+# Testing / coverage
+coverage/
+
+# Misc
+*.tsbuildinfo
+
+
