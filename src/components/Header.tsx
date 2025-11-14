@@ -95,7 +95,13 @@ export default function Header() {
   );
 }
 
-function NavLink({ label, href, active = false }: any) {
+type NavLinkProps = {
+  label: string;
+  href: string;
+  active?: boolean;
+};
+
+function NavLink({ label, href, active = false }: NavLinkProps) {
   return (
     <Link
       href={href}
@@ -108,7 +114,12 @@ function NavLink({ label, href, active = false }: any) {
   );
 }
 
-function NavLinkMobile({ label, href }: any) {
+type NavLinkMobileProps = {
+  label: string;
+  href: string;
+};
+
+function NavLinkMobile({ label, href }: NavLinkMobileProps) {
   return (
     <Link href={href} className="text-white/80 hover:text-white">
       {label}

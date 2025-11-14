@@ -76,8 +76,16 @@ export default function WhyChooseUs() {
   );
 }
 
+type AccordionItemProps = {
+  index: number;
+  title: string;
+  content: string;
+  open: number;
+  setOpen: (value: number) => void;
+};
+
 /* Accordion Item Component */
-function AccordionItem({ index, title, content, open, setOpen }: any) {
+function AccordionItem({ index, title, content, open, setOpen }: AccordionItemProps) {
   const isOpen = open === index;
 
   return (

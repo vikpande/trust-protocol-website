@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function WhoWeAre() {
   return (
     <section id="about" className="w-full scroll-mt-24 py-28 lg:py-32 bg-[#0A0D0C]">
