@@ -18,20 +18,24 @@ export default function HeroSection() {
             <span className="flex items-center justify-center w-5 h-5 rounded-full bg-[#39FF88] text-black text-xs font-bold">
               ✔
             </span>
-            <span className="text-white">Future-Ready</span>
-            <span className="text-[#39FF88]">Cyber Defense Platform</span>
+            <span className="text-white">Trust Assurance Protocol</span>
+            <span className="text-[#39FF88]">AI Governance</span>
           </div>
 
           {/* Title */}
           <h1 className="text-white font-bold text-6xl leading-tight mb-4">
-            Resilient Security, <br />
-            <span className="text-[#39FF88]">Trusted Protection</span>
+            Trust Assurance Protocol
           </h1>
 
           {/* Description */}
-          <p className="text-white/70 text-lg leading-relaxed mb-10 max-w-lg">
-            Fortexa delivers advanced digital defense, safeguarding networks,
-            data, and systems from evolving threats.
+          <p className="text-white/70 text-lg leading-relaxed mb-6 max-w-2xl">
+            Unshakeable Digital Trust. Verifiable Confidence.
+          </p>
+          <p className="text-white/70 text-base leading-relaxed mb-10 max-w-2xl">
+            The Trust Assurance Protocol (TAP) sets a new benchmark for digital trust
+            and AI governance. TAP protects organisations by continually verifying AI
+            agents, infrastructure, data and applications—guaranteeing compliance,
+            safeguarding operations and future-proofing digital ecosystems.
           </p>
 
           {/* CTA Button */}
@@ -39,7 +43,7 @@ export default function HeroSection() {
             href="/contact"
             className="bg-white text-black font-medium px-6 py-3 rounded-xl hover:bg-white/90 transition inline-flex items-center gap-2"
           >
-            Get Started →
+            Explore TAP →
           </Link>
         </div>
 

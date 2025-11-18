@@ -5,13 +5,13 @@ export default function WhoWeAre() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 bg-[#131715] border border-white/10 px-4 py-2 rounded-full mb-4">
           <span className="w-3 h-3 rounded-full bg-[#39FF88]"></span>
-          <span className="text-white text-sm">Who We Are</span>
+          <span className="text-white text-sm">Digital Trust</span>
         </div>
 
         {/* Title */}
         <h2 className="text-white text-4xl md:text-5xl font-bold leading-snug mb-10 lg:mb-14">
-          Advanced Cybersecurity Built <br />
-          For Enterprise Protection
+          Digital Trust for
+          <br className="hidden md:block" /> Evolving Ecosystems
         </h2>
 
         {/* Video Placeholder */}
@@ -26,40 +26,34 @@ export default function WhoWeAre() {
           {/* Left Text */}
           <div className="text-white/70 text-base leading-relaxed space-y-6 max-w-xl">
             <p>
-              Fortexa was founded with a clear mission: to provide organizations
-              with resilient cybersecurity solutions that protect critical data,
-              ensure regulatory compliance, and enable growth in the digital
-              era. Our team of seasoned experts combines intelligence-driven
-              strategies with cutting-edge technologies, offering scalable
-              protection that adapts to the unique challenges of every
-              enterprise.
+              TAP was founded with a clear mission: to independently and
+              cryptographically verify AI agents, processes and data layers.
+              With the AI Agent Passport and Trust Score algorithm, TAP delivers
+              assurance, transparency and auditable governance in a scalable
+              framework designed for businesses that want to remain compliant,
+              secure and innovative in the AI era.
             </p>
             <p>
-              From AI-powered threat detection to risk management frameworks, we
-              partner with businesses across industries to secure their future,
-              minimize vulnerabilities, and build long-term resilience.
+              We protect organisations by continually verifying AI agents,
+              infrastructure, data and applications. That guarantee of
+              compliance safeguards operations today and future-proofs digital
+              ecosystems for what comes next.
             </p>
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 gap-6">
-            <StatCard stat="20+" label="Years Experience" />
-            <StatCard stat="99.9%" label="Incident Response Rate" />
-            <StatCard stat="500+" label="Enterprises Secured" />
-            <StatCard stat="24/7" label="Expert Support" />
+          <div className="bg-[#121614] rounded-2xl p-8 border border-white/10">
+            <h3 className="text-white text-xl font-semibold mb-4">
+              Every TAP integration offers:
+            </h3>
+            <ul className="space-y-4 text-white/70 text-sm leading-relaxed">
+              <li>Continuous monitoring of credentials, data, infrastructure and compliance.</li>
+              <li>Transparent trust score dashboards featuring certified verification statuses.</li>
+              <li>Real-time alerts and automatic delisting when trust is breached.</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
-  );
-}
-
-/* Individual Stat Card Component */
-function StatCard({ stat, label }: { stat: string; label: string }) {
-  return (
-    <div className="bg-[#121614] rounded-2xl p-6 border border-white/10 shadow-lg hover:shadow-[0_0_30px_#1b4727] transition">
-      <h3 className="text-white text-3xl font-bold mb-1">{stat}</h3>
-      <p className="text-white/60 text-sm leading-snug">{label}</p>
-    </div>
   );
 }

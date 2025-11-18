@@ -18,11 +18,11 @@ export default function Footer() {
 
         {/* Feature Badges */}
         <div className="flex flex-wrap justify-center gap-4 mb-12 max-w-3xl mx-auto">
-          <Badge text="Enterprise-Grade Security" />
-          <Badge text="24/7 Protection" />
-          <Badge text="AI-Powered Defense" />
-          <Badge text="Zero Trust Framework" />
-          <Badge text="Proactive Safeguards" />
+          <Badge text="Trust Assurance Protocol" />
+          <Badge text="AI Agent Passport" />
+          <Badge text="Live Trust Scores" />
+          <Badge text="Continuous Compliance" />
+          <Badge text="Real-Time Alerts" />
         </div>
 
         {/* Divider */}
@@ -30,20 +30,20 @@ export default function Footer() {
 
         {/* Footer Navigation */}
         <nav className="flex flex-wrap justify-center items-center gap-6 sm:gap-10 text-white text-sm mb-10">
-          <Link href="/" className="text-[#39FF88]">
+          <Link href="#home" className="text-[#39FF88]">
             Home
           </Link>
-          <Link href="/about" className="hover:text-[#39FF88]">
+          <Link href="#about" className="hover:text-[#39FF88]">
             About
           </Link>
-          <Link href="/services" className="hover:text-[#39FF88]">
+          <Link href="#services" className="hover:text-[#39FF88]">
             Service
           </Link>
-          <Link href="/team" className="hover:text-[#39FF88]">
-            Team
+          <Link href="#why-us" className="hover:text-[#39FF88]">
+            Why TAP
           </Link>
-          <Link href="/works" className="hover:text-[#39FF88]">
-            Works
+          <Link href="#faq" className="hover:text-[#39FF88]">
+            FAQ
           </Link>
         </nav>
 

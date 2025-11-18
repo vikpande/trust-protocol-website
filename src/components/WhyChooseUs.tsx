@@ -8,19 +8,24 @@ export default function WhyChooseUs() {
 
   const items = [
     {
-      title: "Proven Industry Expertise",
+      title: "Eliminate identity and trust fragmentation",
       content:
-        "Fortexa’s team combines decades of cybersecurity knowledge, delivering strategies trusted by enterprises worldwide.",
+        "Centralise verification across agents, infrastructure and data so every participant carries a live, cryptographic trust passport.",
     },
     {
-      title: "24/7 Security Assurance",
+      title: "Instant compliance readiness & competitive edge",
       content:
-        "Our security operations center monitors your infrastructure round-the-clock to detect anomalies instantly.",
+        "Automated assessments, audit trails and trust dashboards make regulatory proof effortless while signalling reliability to partners.",
     },
     {
-      title: "AI-Driven Protection",
+      title: "Access TAP-reserved marketplaces",
       content:
-        "Our AI-powered engine automatically adapts to new threats, ensuring proactive and intelligent defense.",
+        "Join ecosystems that demand TAP certification to unlock premium demand channels for trustworthy AI agents and services.",
+    },
+    {
+      title: "Reduce risks & protect reputation",
+      content:
+        "Continuous monitoring, alerts and automatic delisting contain incidents fast, keeping operations resilient and compliant.",
     },
   ];
 
@@ -43,18 +48,20 @@ export default function WhyChooseUs() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-[#131715] border border-white/10 px-4 py-2 rounded-full mb-4">
             <span className="w-3 h-3 rounded-full bg-[#39FF88]"></span>
-            <span className="text-white text-sm">Why Choose Us</span>
+            <span className="text-white text-sm">Why TAP?</span>
           </div>
 
           {/* Title */}
           <h2 className="text-white text-4xl md:text-5xl font-bold leading-snug mb-6">
-            Comprehensive <br /> Cybersecurity Service
+            Verifiable Confidence
+            <br /> For AI-Driven Business
           </h2>
 
           {/* Intro Text */}
           <p className="text-white/70 text-base max-w-lg mb-10">
-            Fortexa safeguards businesses with enterprise-grade protection,
-            proactive monitoring, and unmatched industry expertise.
+            TAP translates trust into an operational advantage with tamper-proof
+            verification, live trust scores and proactive enforcement across
+            every integration.
           </p>
 
           {/* Accordion */}

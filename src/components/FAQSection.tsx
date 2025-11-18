@@ -5,33 +5,24 @@ import { useState } from "react";
 export default function FAQSection() {
   const faqs = [
     {
-      q: "What industries does Fortexa serve?",
-      a: "We secure finance, healthcare, retail, and government organizations with advanced solutions.",
+      q: "Who is TAP for?",
+      a: "For AI developers, enterprises, marketplaces and ecosystem partners who view trust and compliance as non-negotiable.",
     },
     {
-      q: "How fast is your threat detection?",
-      a: "Our system detects anomalies in real-time using AI-driven response mechanisms.",
+      q: "How does the Trust Score work?",
+      a: "The Trust Score is calculated from weighted factors such as infrastructure posture, data integrity, audit outcomes and time—delivering the up-to-date trust status of any agent.",
     },
     {
-      q: "Do you offer 24/7 support?",
-      a: "Yes, our cybersecurity specialists provide round-the-clock monitoring and assistance.",
-    },
-    {
-      q: "Is your platform cloud-compatible?",
-      a: "Fortexa is fully cloud-compatible with multi-cloud, hybrid, and on-premise environments.",
-    },
-    {
-      q: "How do you ensure compliance?",
-      a: "We align with global standards, including GDPR, HIPAA, ISO 27001, and SOC frameworks.",
-    },
-    {
-      q: "Can Fortexa stop ransomware attacks?",
-      a: "Yes, our system uses behavioral analysis and AI-led responses to neutralize threats.",
+      q: "How does TAP ensure compliance?",
+      a: "Through continuous monitoring, automated audits, real-time alerts and immediate deactivation of agents that no longer meet requirements.",
     },
   ];
 
   return (
-    <section id="faq" className="w-full scroll-mt-24 py-28 lg:py-32 bg-[#0A0D0C]">
+    <section
+      id="faq"
+      className="w-full scroll-mt-24 py-28 lg:py-32 bg-[#0A0D0C]"
+    >
       <div className="max-w-7xl mx-auto px-6">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 bg-[#131715] border border-white/10 px-4 py-2 rounded-full mb-4">
@@ -47,8 +38,7 @@ export default function FAQSection() {
 
         {/* Subtitle */}
         <p className="text-white/60 max-w-2xl text-base mb-14">
-          Find quick answers to cybersecurity services, solutions, and
-          support-related questions here.
+          Answers to the most common Trust Assurance Protocol questions.
         </p>
 
         {/* FAQ GRID */}
@@ -63,7 +53,7 @@ export default function FAQSection() {
 }
 
 function FAQItem({ q, a }: { q: string; a: string }) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   return (
     <div
