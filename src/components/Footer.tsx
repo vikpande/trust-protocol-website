@@ -48,15 +48,38 @@ export default function Footer() {
         </nav>
 
         {/* Social Icons */}
-        <div className="flex justify-center gap-5 mb-10">
-          <SocialIcon icon="/images/icons/facebook.png" />
-          <SocialIcon icon="/images/icons/linkedin.png" />
-          <SocialIcon icon="/images/icons/x.png" />
+        <div className="flex justify-center gap-2 mb-10">
+          <a
+            href="https://www.linkedin.com/company/trust-assurance-protocol"
+            target="_blank"
+            className="w-10 h-10 flex items-center justify-center rounded-xl text-[#39FF88] hover:bg-[#39FF88]/10 transition"
+          >
+            <Image
+              src="/images/icons/linkedin.png"
+              alt="social"
+              width={34}
+              height={34}
+            />
+          </a>
+          <a
+            href="https://x.com/trust-assurance-protocol"
+            target="_blank"
+            className="w-10 h-10 flex items-center justify-center rounded-xl text-[#39FF88] hover:bg-[#39FF88]/10 transition"
+          >
+            <Image
+              src="/images/icons/x.png"
+              alt="social"
+              width={34}
+              height={34}
+            />
+          </a>
         </div>
 
         {/* Copyright */}
         <p className="text-white/40 text-sm">
-          Copyright © 2025 Rometheme. All Rights Reserved.
+          <a href="https://www.agentic-alliance.com/" target="_blank">
+            Copyright © 2025 Agentic Alliance Group. All Rights Reserved.
+          </a>
         </p>
       </div>
     </footer>
@@ -72,14 +95,5 @@ function Badge({ text }: { text: string }) {
       </span>
       {text}
     </div>
-  );
-}
-
-/* Social Icon Component */
-function SocialIcon({ icon }: { icon: string }) {
-  return (
-    <button className="w-10 h-10 flex items-center justify-center rounded-xl text-[#39FF88] hover:bg-[#39FF88]/10 transition">
-      <Image src={icon} alt="social" width={34} height={34} />
-    </button>
   );
 }
