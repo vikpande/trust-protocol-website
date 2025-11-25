@@ -33,6 +33,12 @@ export default function Header() {
     };
   }, [open]);
 
+  const isCompact = scrolled || open;
+  const headerPadding = isCompact ? "py-2.5 lg:py-3" : "py-4 lg:py-6";
+  const logoSize = isCompact ? 130 : 180;
+  const logoScale = isCompact ? 0.85 : 1;
+  const ctaPadding = isCompact ? "px-4 py-2 text-sm" : "px-6 py-3";
+
   return (
     <>
       <header
@@ -42,14 +48,20 @@ export default function Header() {
             : "bg-transparent"
         }`}
       >
-        <div className="max-w-7xl mx-auto flex items-center justify-between py-4 lg:py-6 px-6 lg:px-0">
+        <div
+          className={`max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-0 transition-[padding] duration-300 ${headerPadding}`}
+        >
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
+          <Link
+            href="/"
+            className="flex items-center gap-2 transition-transform duration-300"
+            style={{ transform: `scale(${logoScale})` }}
+          >
             <Image
               src="/images/logo.png"
               alt="Fortexa Logo"
-              width={180}
-              height={180}
+              width={logoSize}
+              height={logoSize}
             />
           </Link>
 
@@ -68,7 +80,7 @@ export default function Header() {
           {/* CTA */}
           <Link
             href="#contact"
-            className="hidden lg:flex bg-[#39FF88] text-black font-medium px-6 py-3 rounded-xl shadow-lg hover:opacity-90 transition"
+            className={`hidden lg:flex bg-[#39FF88] text-black font-medium rounded-xl shadow-lg hover:opacity-90 transition ${ctaPadding}`}
           >
             Get Started →
           </Link>
